@@ -632,9 +632,9 @@ class RoboInterface:
                 This function will return a human readable string like "Robo Interface"
                 you can work with.
                 """
-                s = create_string_buffer('\0' * 128)
+                s = create_string_buffer(b'\0' * 128)
                 self.lib.GetFtDeviceTypeString(self.fthandle_p, s, 128)
-                return s.value
+                return s.value.decode()
 
 
         def __del__(self):

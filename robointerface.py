@@ -99,7 +99,7 @@ class _FT_TRANSFER_AREA(Structure):
                 ("MPWM_Update", c_ubyte),
                 ("TransferAktiv", c_ubyte),
                 ("rsvd11", c_ubyte*3),
-                ("BudModules", c_ubyte),
+                ("BusModules", c_ubyte),
                 ("SlotModule1", c_ubyte),
                 ("SlotModule2", c_ubyte),
                 ("rsvd12", c_ubyte*7),

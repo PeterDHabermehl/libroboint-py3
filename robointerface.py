@@ -456,7 +456,7 @@ class RoboInterface:
                                 return (self.transfer_area.E_Sub1 & (1<<(iNum-1))) >> (iNum-1)
                         elif iNum <= 24:
                                 iNum -= 16
-                                return (self.transfer_area.E_Sub3 & (1<<(iNum-1))) >> (iNum-1)
+                                return (self.transfer_area.E_Sub2 & (1<<(iNum-1))) >> (iNum-1)
                         elif iNum <= 32:
                                 iNum -= 24
                                 return (self.transfer_area.E_Sub3 & (1<<(iNum-1))) >> (iNum-1)
